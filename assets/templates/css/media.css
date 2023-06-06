@@ -1,0 +1,136 @@
+@media(max-width:1170px) {
+  .nav__list {
+    gap: 40px;
+  }
+}
+@media(max-width:992px) {
+  .nav__list {
+    gap: 20px;
+  }
+  .vidio__content {
+    top: 20%;
+  }
+  .vidio__title {
+    font-size: 30px;
+  }
+  .section-florist__item  {
+    max-width: 48%;
+  }
+  .section-products__item {
+    max-width: 48%;
+  }
+}
+@media(max-width:1024px) {
+  .section-gallery__inner {
+    justify-content: center;
+  }
+  .section-gallery__item {
+    max-width: 30%;
+  }
+}
+@media (max-width:768px) {
+  .header {
+    height: 60px;
+  }
+  .nav {
+    --header-height: 45px;
+    padding-top: 80px;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background-color: #f2f2f2;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+    overflow-x: auto;
+  }
+
+  .nav--visible {
+    transform: none;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__item {
+    margin-bottom: 30px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .nav__link {
+    color: #000;
+    font-size: 23px;
+  }
+
+  .burger {
+    display: block;
+  }
+  .section-messeger__inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .section-contacts__img-inner  {
+    flex-wrap: wrap;
+  }
+}
+@media(max-width:567px) {
+  .vidio__content {
+    top: 15%;
+  }
+  .vidio__title {
+    font-size: 20px;
+  }
+  .read__more {
+    font-size: 15px;
+  }
+  .section-gallery__inner {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .section-gallery__item {
+    max-width: 48%;
+  }
+}
+@media(max-width:480px) {
+  .section-gallery__item {
+    max-width: 100%;
+  }
+}
+@media(max-width:480px) {
+  .vidio__content {
+    top: 10%;
+  }
+  .section-florist__item  {
+    max-width: 100%;
+  }
+  .section-products__item {
+    max-width: 100%;
+  }
+  .footer__top-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer__top-inner {
+    justify-content: center;
+  }
+}
+@media(max-width:320px) {
+  .vidio__title {
+    font-size: 15px;
+  }
+}
+@media(max-width:280px) {
+  .vidio__title {
+    font-size: 12px;
+  }
+}
